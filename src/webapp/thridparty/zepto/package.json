@@ -1,0 +1,5 @@
+{
+    "name": "zepto",
+    "description": "Minimalist JavaScript library for modern browsers with a largely jQuery-compatible API",
+    "version": "1.0.0rc1"
+}

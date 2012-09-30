@@ -1,0 +1,18 @@
+{
+    "name": "mdify.github.com",
+    "description": "HTML5-based Markdown viewer",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "node": ">= 0.6.3"
+    },
+    "devDependencies": {
+        "grunt": "0.3.11",
+        "grunt-context": "0.3.3",
+        "grunt-reload": "0.2.0",
+        "connect": "2.4.5",
+        "sqwish": "0.2.0",
+        "grunt-htmlcompressor": "0.0.1",
+        "stylus": "0.29.0"
+    }
+}

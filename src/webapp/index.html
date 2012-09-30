@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<html manifest="cache.manifest">
+    <title>mdify.github.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="HTML5-based Markdown viewer">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="thridparty/webfonts/fonts.pack.css"/>
+    <link rel="stylesheet" href="thridparty/normalize/normalize.css"/>
+    <link rel="stylesheet" href="thridparty/highlight/ascetic.css">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<section>
+    <header>
+        <div id="loader">loading</div>
+    </header>
+    <article>
+    </article>
+</section>
+<script src="thridparty/yepnope/yepnope.js"></script>
+<script type="text/javascript">
+    yepnope([
+        'thridparty/zepto/zepto.js',
+        'thridparty/zepto/fx.js',
+        'thridparty/zepto/fx_methods.js',
+        'thridparty/marked/marked.js',
+        'thridparty/highlight/highlight.pack.js',
+        'index.js'
+    ]);
+</script>
+</body>
+</html>
