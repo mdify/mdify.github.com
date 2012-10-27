@@ -93,6 +93,25 @@
                     }
                 });
             },
+            bitbucket: function(username, repository, branch, file, callback) {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    url: 'https://api.bitbucket.org/1.0/repositories/' + username + '/' + repository + '/src/' + branch + '/' + file,
+                    success: function(res) {
+                        callback({
+                            link: {
+                                href: 'https://bitbucket.org/' + username + '/' + repository + '/src/' + branch + '/' + file,
+                                text: 'bitbucket: ' + username + '/' + repository + '/' + branch + '/' + file
+                            },
+                            markdown: res.data
+                        });
+                    },
+                    error: function() {
+                        callback({error: 'The requested bitbucket file is not available.'});
+                    }
+                });
+            },
             cors: function(url, callback) {
                 $.ajax({
                     type: 'GET',
@@ -125,17 +144,21 @@
             if (options.gist) {
                 return resolvers.gist(options.gist, callback);
             }
-            if (options.github) {
-                var link = options.github, split = link.split('/', 3), file = '';
-                if (split.length === 3) {
-                    var username = split[0], repository = split[1], branch = split[2];
-                    file = link.substr(username.length + repository.length + branch.length + 3).trim();
+            var services = ['github', 'bitbucket'];
+            for (var i = 0; i < services.length; i++) {
+                var service = services[i];
+                if (options[service]) {
+                    var link = options[service], split = link.split('/', 3), file = '';
+                    if (split.length === 3) {
+                        var username = split[0], repository = split[1], branch = split[2];
+                        file = link.substr(username.length + repository.length + branch.length + 3).trim();
+                    }
+                    if (file === '') {
+                        return callback({error: 'The value of "' + service + '" request parameter does not conform ' +
+                            'to the "username/repository/branch/file" pattern.'});
+                    }
+                    return resolvers[service](username, repository, branch, file, callback);
                 }
-                if (file === '') {
-                    return callback({error: 'The value of "github" request parameter does not conform ' +
-                        'to the "username/repository/branch/file" pattern.'});
-                }
-                return resolvers.github(username, repository, branch, file, callback);
             }
             if (options.cors) {
                 return resolvers.cors(options.cors, callback);
