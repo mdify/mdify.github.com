@@ -1,8 +1,6 @@
 # mdify
 
-HTML5-based Markdown viewer featuring offline rendering, transparent navigation between connected `.md` documents and responsive design.
-Heavily influenced by awesome [gist.io](http://gist.io).
-Source code is freely available at [github.com/mdify/mdify.github.com](https://github.com/mdify/mdify.github.com/tree/develop).
+[gist.io](http://gist.io)-inspired HTML5-powered [Markdown](http://daringfireball.net/projects/markdown) viewer for [Bitbucket](https://bitbucket.org), [Github](https://github.com) + [Gist](https://gist.github.com) hosted, [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)-accessible resources, with a support of Drag & Drop and fully functional offline mode. It consists solely of HTML/CSS/JS and no server-side code whatsoever.
 
 ### Sources:
 
@@ -53,3 +51,4 @@ example: [mdify.github.com/?gist=bfc69f42cd966117bf83&ci](mdify.github.com/?gist
 description: hide description. applicable to gists only<br/>
 example: [mdify.github.com/?gist=2843375&hd](mdify.github.com/?gist=2843375&hd)
 
+Source code, authored by [Stanley Shyiko](http://twitter.com/shyiko), is freely available at [github.com/mdify/mdify.github.com](https://github.com/mdify/mdify.github.com/tree/develop).

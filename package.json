@@ -1,6 +1,6 @@
 {
     "name": "mdify.github.com",
-    "description": "HTML5-based Markdown viewer",
+    "description": "HTML5-powered Markdown viewer",
     "version": "0.1.0",
     "private": true,
     "engines": {
