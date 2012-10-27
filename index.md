@@ -1,6 +1,6 @@
 # mdify
 
-[gist.io](http://gist.io)-inspired HTML5-powered [Markdown](http://daringfireball.net/projects/markdown) viewer for [Bitbucket](https://bitbucket.org), [Github](https://github.com) + [Gist](https://gist.github.com) hosted, [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)-accessible resources, with a support of Drag & Drop and fully functional offline mode. It consists solely of HTML/CSS/JS and no server-side code whatsoever.
+[gist.io](http://gist.io)-inspired HTML5-powered [Markdown](http://daringfireball.net/projects/markdown) viewer for [Bitbucket](https://bitbucket.org), [Github](https://github.com) + [Gist](https://gist.github.com) hosted, [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)-accessible resources, with a support of Drag & Drop. It consists solely of HTML/CSS/JS and no server-side code whatsoever.
 
 ### Sources:
 
