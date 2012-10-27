@@ -6,44 +6,50 @@ Source code is freely available at [github.com/mdify/mdify.github.com](https://g
 
 ### Sources:
 
+BitBucket
+
+> ?bitbucket=&lt;username/repository/branch/file&gt;
+
+example: [mdify.github.com/?bitbucket=shyiko/mdify-sample/master/basics.of.markdown.syntax.md](mdify.github.com/?bitbucket=shyiko/mdify-sample/master/basics.of.markdown.syntax.md)
+
 GitHub
 
 > ?github=&lt;username/repository/branch/file&gt;
 
-example: [mdify.github.com/?github=lorem/shyiko/master/readme.md](https://mdify.github.com/?github=lorem/shyiko/master/readme.md)
+example: [mdify.github.com/?github=shyiko/lorem/master/readme.md](mdify.github.com/?github=shyiko/lorem/master/readme.md)
 
 Gist
 
 > ?gist=&lt;gist id&gt;
 
-example: [mdify.github.com/?gist=3135754](https://mdify.github.com/?gist=3135754)
+example: [mdify.github.com/?gist=2843375](mdify.github.com/?gist=2843375)
 
 CORS
 
-> ?cors=&lt;URL of the resource accessible through CORS&gt;
+> ?cors=&lt;[encoded](http://www.freeformatter.com/url-encoder.html) URL of the resource accessible through CORS&gt;
 
-example: [mdify.github.com/?cors=http://corsy.jit.su?get=http://pastebin.com/raw.php?i=HkNtAGFw](https://mdify.github.com/?cors=http://corsy.jit.su?get=http://pastebin.com/raw.php?i=HkNtAGFw)<br/>
-browser support: [caniuse.com/cors](http://caniuse.com/cors)
+example: [mdify.github.com/?cors=http%3A%2F%2Fcorsy.jit.su%3Fget%3D...](mdify.github.com/?cors=http%3A%2F%2Fcorsy.jit.su%3Fget%3Dhttp%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DHkNtAGFw)<br/>
+browser requirements: [caniuse.com/cors](http://caniuse.com/cors)
 
 Drag&Drop
 
 usage: drag and drop any `.md` file onto the page<br/>
-browser support: [caniuse.com/dragndrop](http://caniuse.com/dragndrop) and [caniuse.com/filereader](http://caniuse.com/filereader)
+browser requirements: [caniuse.com/dragndrop](http://caniuse.com/dragndrop) and [caniuse.com/filereader](http://caniuse.com/filereader)
 
-### Additional parameters
+### Additional query parameters
 
 > &hh
 
 description: force header to hide<br/>
-example: [mdify.github.com/?gist=3135754&hh](https://mdify.github.com/?gist=3135754&hh)
+example: [mdify.github.com/?gist=2843375&hh](mdify.github.com/?gist=2843375&hh)
 
 > &ci
 
 description: center images<br/>
-example: [mdify.github.com/?gist=3135754&ci](https://mdify.github.com/?gist=3135754&ci)
+example: [mdify.github.com/?gist=bfc69f42cd966117bf83&ci](mdify.github.com/?gist=bfc69f42cd966117bf83&ci)
 
 > &hd
 
-description: hide description. applicable to the gists only<br/>
-example: [mdify.github.com/?gist=3135754&hd](https://mdify.github.com/?gist=3135754&hd)
+description: hide description. applicable to gists only<br/>
+example: [mdify.github.com/?gist=2843375&hd](mdify.github.com/?gist=2843375&hd)
 
