@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 0.1.0
+# version 0.1.1
 index.html
 thridparty/webfonts/alegreya/v4/MYFQxfgoxFvFirdbdLj3M_esZW2xOQ-xsNqO47m55DA.woff
 thridparty/webfonts/alegreya/v4/IWi8e5bpnqhMRsZKTcTUWgFhaRv2pGgT5Kf0An0s4MM.woff
@@ -20,3 +20,6 @@ index.css
 index.md
 favicon.ico
 index.js
+
+NETWORK:
+*
